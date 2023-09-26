@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+
+$primary-color: #00abf0;
+$text-color: #ededed;
+$background: #081b29;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: $background;
+  color: $text-color;
+
+  h1.header {
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+  }
+
+  main {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+
+    section.container {
+      width: 100%;
+      color: $background;
+
+      > div {
+        border-radius: 2px;
+      }
+
+      .rates-wrapper {
+        background: #fff;
+
+        nav {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 20px;
+          font-size: 18px;
+          background: #f3f6f9;
+
+          > div {
+            font-weight: 600;
+          }
+        }
+
+        li {
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid rgb(236, 236, 236);
+          padding: 5px 20px;
+
+          &:nth-of-type(even) {
+            background-color: rgb(246, 247, 248);
+          }
+
+          &:hover {
+            background-color: rgb(235, 242, 247);
+          }
+        }
+      }
+
+      .specific-currency-wrapper {
+        background-color: rgb(235, 242, 247);
+        padding: 20px;
+        text-align: center;
+        margin: 0 0 30px;
+
+        h3 {
+          margin: 0 0 20px;
+        }
+      }
+
+      .hidden {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+    }
+  }
+}
